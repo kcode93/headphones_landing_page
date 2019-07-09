@@ -8,6 +8,11 @@
 }
 /*************************** Global *******************************/
 
+/***** Typography *****/
+html{
+    font-family: 'Raleway', sans-serif;
+}
+
 /***** margins *****/
 .m-1{
     margin: 1rem;
@@ -144,4 +149,59 @@
     -moz-border-radius: 50%;
     border-radius: 50%;
 }
-/******************************************************************/
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn{
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+    -webkit-border-radius: 160px;
+    -moz-border-radius: 160px;
+    border-radius: 160px;
+}
+
+.btn-primary{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn-secondary{
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+}
+
+/**************************** nav *********************************/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: var(--primary-color);
+    height: 25%;
+    padding: 1rem;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-btns{
+    display: flex;
+}
+
+/***************************** showcase *********************************/
+
+
+
