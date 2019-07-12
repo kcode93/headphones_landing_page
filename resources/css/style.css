@@ -5,12 +5,29 @@
     --support-color-B: #ADCCD9;
     --support-color-C: #E8C7DC;
     --white-color: #fff;
+    --gray-color: #9097A5;
 }
 /*************************** Global *******************************/
 
 /***** Typography *****/
 html{
     font-family: 'Raleway', sans-serif;
+}
+
+.lead{
+    font-size: 3.5rem;
+    line-height: 1.5;
+    padding: 1rem;
+}
+
+.compliment{
+    font-size: 1.85rem;
+    line-height: 1;
+    padding: 1rem;
+}
+
+.bold{
+    font-weight: bold;
 }
 
 /***** margins *****/
@@ -56,6 +73,10 @@ html{
 
 .mxl-3{
     margin-left: 3rem;
+}
+
+.mxl-4{
+    margin-left: 4rem;
 }
 
 .mxr-3{
@@ -151,7 +172,7 @@ html{
 }
 
 .container{
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -161,11 +182,13 @@ html{
     -webkit-border-radius: 160px;
     -moz-border-radius: 160px;
     border-radius: 160px;
+    text-decoration: none;
 }
 
 .btn-primary{
     color: var(--white-color);
     background-color: var(--primary-color);
+    
 }
 
 .btn-secondary{
@@ -173,11 +196,49 @@ html{
     background-color: var(--secondary-color);
 }
 
+.btn-white{
+    color: var(--primary-color);
+    background-color: var(--white-color);
+}
+
+.primary-color{
+    color: var(--primary-color);
+}
+
+.secondary-color{
+    color: var(--secondary-color);
+}
+
+.white-color{
+    color: var(--white-color);
+}
+
+.gray-color{
+    color: var(--gray-color);
+}
+
+.bg-primary{
+    background-color: var(--primary-color);
+}
+
+.bg-secondary{
+    background-color: var(--secondary-color);
+}
+
+.block{
+    display: block;
+}
+
+div{
+    /*border: 2px solid black;*/
+}
+
 /**************************** nav *********************************/
 
 nav{
     display: flex;
     justify-content: space-between;
+    width: 100%;
     color: var(--primary-color);
     height: 25%;
     padding: 1rem;
@@ -190,6 +251,7 @@ nav ul li{
 nav a{
     color: var(--primary-color);
     text-decoration: none;
+    font-weight: bold;
 }
 
 .nav-links{
@@ -202,6 +264,98 @@ nav a{
 }
 
 /***************************** showcase *********************************/
+
+.showcase{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    background: #fff4f4; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #fff4f4 15%, #fff4f4 40%, #fff4f4 40%, #c28eed 50%, #eab9e8 92%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #fff4f4 15%,#fff4f4 40%,#fff4f4 40%,#c28eed 50%,#eab9e8 92%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #fff4f4 15%,#fff4f4 40%,#fff4f4 40%,#c28eed 50%,#eab9e8 92%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.showcase .container{
+    display: flex;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img{
+    width: 100%;
+}
+
+.showcase-email{
+    margin-left: 4rem;
+}
+
+/***************************** promo-design *********************************/
+
+.promo-design{
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+}
+
+.promo-design .container{
+    display: flex;
+}
+
+.purple-box{
+    padding: 3rem;
+    width: 40%;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+#learnMore{
+    margin-top: 2rem;
+}
+
+.white-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 1rem;
+    width: 60%;
+    grid-template-areas: 'design . sound'
+                         '. update .'
+                         'weigh . device';
+    padding: 3rem;
+    font-size: 1rem;
+    color: var(--primary-color);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+.design{
+    grid-area: design;
+}
+
+.sound{
+    grid-area: sound;
+}
+
+.update{
+    grid-area: update;
+    color: var(--secondary-color);
+}
+
+.weight{
+    grid-area: weigh;
+}
+
+.device{
+    grid-area: device;
+}
 
 
 
