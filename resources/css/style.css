@@ -270,10 +270,10 @@ nav a{
     flex-direction: column;
     width: 100%;
     padding: 1rem;
-    background: #fff4f4; /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #fff4f4 15%, #fff4f4 40%, #fff4f4 40%, #c28eed 50%, #eab9e8 92%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #fff4f4 15%,#fff4f4 40%,#fff4f4 40%,#c28eed 50%,#eab9e8 92%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #fff4f4 15%,#fff4f4 40%,#fff4f4 40%,#c28eed 50%,#eab9e8 92%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: #f9f9f9; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #f9f9f9 1%, #9c96f2 38%, #edbfef 88%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #f9f9f9 1%,#9c96f2 38%,#edbfef 88%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #f9f9f9 1%,#9c96f2 38%,#edbfef 88%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .showcase .container{
