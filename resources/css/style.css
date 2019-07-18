@@ -4,8 +4,9 @@
     --support-color-A: #D87EE7;
     --support-color-B: #ADCCD9;
     --support-color-C: #E8C7DC;
+    --support-primary-color: #4F46CA;
     --white-color: #fff;
-    --gray-color: #9097A5;
+    --gray-color: rgb(60, 61, 63);
 }
 /*************************** Global *******************************/
 
@@ -21,9 +22,15 @@ html{
 }
 
 .compliment{
-    font-size: 1.85rem;
+    font-size: 2.5rem;
     line-height: 1;
-    padding: 1rem;
+    padding: 0.5rem;
+}
+
+.small{
+    font-size: 1.5rem;
+    line-height: 1;
+    padding: 0.5rem;
 }
 
 .bold{
@@ -185,6 +192,25 @@ html{
     text-decoration: none;
 }
 
+.mix{
+    position: relative;
+}
+
+.input{
+    font-size: 1rem;
+    padding: 0.8rem 2.2rem;
+    width: 100%;
+    -webkit-border-radius: 160px;
+    -moz-border-radius: 160px;
+    border-radius: 160px;
+}
+
+#submit{
+    position: absolute;
+    right: 2%;
+    top: 10%;
+}
+
 .btn-primary{
     color: var(--white-color);
     background-color: var(--primary-color);
@@ -207,6 +233,10 @@ html{
 
 .secondary-color{
     color: var(--secondary-color);
+}
+
+.support-color-a{
+    color: var(--support-color-A);
 }
 
 .white-color{
@@ -284,7 +314,7 @@ nav a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .hero-img{
@@ -355,6 +385,98 @@ nav a{
 
 .device{
     grid-area: device;
+}
+
+/***************************** color-collection *********************************/
+.color-collection{
+    display: flex;
+}
+
+.color-collection .container{
+    display: flex;
+}
+
+.color-collection .hero-text{
+    width: 100%;
+    align-items: center;
+}
+
+.color-circles{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+
+.circle{
+    background: #a59ef7; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #a59ef7 0%, #f0aff7 22%, #f0aff7 22%, #689dc9 40%, #dd9c73 63%, #9897e5 75%, #e5a589 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #a59ef7 0%,#f0aff7 22%,#f0aff7 22%,#689dc9 40%,#dd9c73 63%,#9897e5 75%,#e5a589 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #a59ef7 0%,#f0aff7 22%,#f0aff7 22%,#689dc9 40%,#dd9c73 63%,#9897e5 75%,#e5a589 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    width: 5.5rem;
+    height: 5.5rem;
+    padding: 1rem;
+}
+
+.underline{
+    padding: 0.5rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/***************************** purple-section *********************************/
+.purple-section{
+    display: flex;
+    background-color: var(--support-primary-color);
+    color: var(--white-color);
+}
+
+.purple-section .container{
+    display: flex;
+}
+
+.purple-section .hero-img{
+    padding: 1rem;
+    margin: auto auto;
+}
+
+.purple-section .hero-text{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.captions{
+    width: 100%;
+    font-size: 3.5rem;
+    line-height: 1;
+    margin-bottom: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.features{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-element{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 0;
+
+}
+
+.feature-element a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.feature-element h2{
+    font-size: 1.5rem;
 }
 
 
