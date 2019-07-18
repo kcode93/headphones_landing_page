@@ -134,6 +134,10 @@ html{
     margin-right: auto;
 }
 
+.pull-center{
+    margin: 0 auto;
+}
+
 /***** padding *****/
 .p-1{
     padding: 1rem;
@@ -446,12 +450,15 @@ nav a{
 }
 
 .captions{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
     font-size: 3.5rem;
     line-height: 1;
     margin-bottom: 3rem;
-    justify-content: center;
-    align-items: center;
 }
 
 .features{
