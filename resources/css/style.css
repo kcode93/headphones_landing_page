@@ -7,6 +7,7 @@
     --suport-color-D: #8BE1DA;
     --support-primary-color: #4F46CA;
     --white-color: #fff;
+    --light-gray-color: rgb(190, 188, 188);
     --gray-color: rgb(60, 61, 63);
 }
 /*************************** Global *******************************/
@@ -207,6 +208,9 @@ html{
     border-radius: 160px;
 }
 
+.position-relative{
+    position: relative;
+}
 
 
 .btn-primary{
@@ -347,6 +351,7 @@ nav a{
     position: absolute;
     left: 5%;
     top: 33.5%;
+    color: var(--light-gray-color);
 }
 
 #submit{
@@ -606,8 +611,8 @@ nav a{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
     background: #a59ef7; /* Old browsers */
     background: -moz-linear-gradient(-45deg, #a59ef7 0%, #f0aff7 22%, #f0aff7 22%, #689dc9 40%, #dd9c73 63%, #9897e5 75%, #e5a589 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(-45deg, #a59ef7 0%,#f0aff7 22%,#f0aff7 22%,#689dc9 40%,#dd9c73 63%,#9897e5 75%,#e5a589 100%); /* Chrome10-25,Safari5.1-6 */
@@ -643,13 +648,74 @@ nav a{
     align-items: center;
 }
 
-.promo-sale-bottom .contact-us{
+#sayHello{
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-us{
     display: flex;
+    margin-bottom: 2rem;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+
+.contact-us .greeting{
+    position: relative;
+    width: 50%;
+    text-align: right;
+}
+
+.contact-us .greeting #user-icon{
+    position: absolute;
+    left: 15.5rem;
+    top: 1rem;
+    color: var(--light-gray-color);
+}
+
+.contact-us .greeting input{
+    font-size: 1rem;
+    padding: 0.9rem 2.2rem;
+    width: 60%;
+    margin-right: 0.5rem;
+    -webkit-border-radius: 160px;
+    -moz-border-radius: 160px;
+    border-radius: 160px;
+}
+
+.contact-us .position-relative{
+    width: 50%;
+    text-align: left;
+}
+
+.contact-us .position-relative #envelop{
+    left:3.7%;
+    color: var(--light-gray-color);
+}
+
+.promo-sale-bottom .position-relative input{
+    font-size: 1rem;
+    padding: 0.9rem 2.2rem;
+    width: 60%;
+    margin-left: 0.5rem;
+    -webkit-border-radius: 160px;
+    -moz-border-radius: 160px;
+    border-radius: 160px;
+}
+
+.promo-sale-bottom .position-relative a{
+    position: absolute;
+    right: 15rem;
+    top: 0.4rem;
 }
 
 /***************************** footer ******************************/
 footer{
     display: flex;
+    margin-top: 5rem;
+    background-color: var(--support-primary-color);
 }
 
 footer .container{
