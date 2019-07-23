@@ -592,16 +592,34 @@ nav a{
     padding: 1rem;
     width: 30%;
     height: 25rem; 
-    border: 1px solid black;  
+     
 }
 
 .inner-box{
-    padding: 0.5rem;
-    height: 20rem;
+    position: relative;
+    height: 20rem;    
+}
+
+.shopping-cart{
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
     background: #a59ef7; /* Old browsers */
     background: -moz-linear-gradient(-45deg, #a59ef7 0%, #f0aff7 22%, #f0aff7 22%, #689dc9 40%, #dd9c73 63%, #9897e5 75%, #e5a589 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(-45deg, #a59ef7 0%,#f0aff7 22%,#f0aff7 22%,#689dc9 40%,#dd9c73 63%,#9897e5 75%,#e5a589 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(135deg, #a59ef7 0%,#f0aff7 22%,#f0aff7 22%,#689dc9 40%,#dd9c73 63%,#9897e5 75%,#e5a589 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.shopping-cart:hover{
+    cursor: pointer;
+}
+
+.inner-box img{
+    width: 100%;
 }
 
 .underline{
