@@ -632,5 +632,26 @@ nav a{
     padding: 0.5rem;
 }
 
+.promo-sale-bottom{
+    display: flex;
+}
 
+.promo-sale-bottom .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.promo-sale-bottom .contact-us{
+    display: flex;
+}
+
+/***************************** footer ******************************/
+footer{
+    display: flex;
+}
+
+footer .container{
+    display: flex;
+}
