@@ -721,3 +721,8 @@ footer{
 footer .container{
     display: flex;
 }
+
+footer a{
+    color: var(--white-color);
+    text-decoration: none;
+}
