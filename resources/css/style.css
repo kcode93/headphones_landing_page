@@ -345,6 +345,7 @@ nav a{
 
 .mix{
     position: relative;
+    margin-left: 3rem;
 }
 
 #envelop{
@@ -743,4 +744,48 @@ footer a{
 .social-media li{
     display: inline-block;
     padding: 1.2rem 0.5rem;
+}
+
+/***************************** media queries **********************************/
+
+/*Desktops/laptos*/
+@media only screen and (max-width: 1215px){
+
+
+}
+
+/*Tablets*/
+@media only screen and (max-width: 1023px){
+    
+
+}
+
+/*Mobile*/
+@media only screen and (max-width: 767px){
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .showcase .container{
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .showcase .container .mix{
+        margin-left: 0;
+        margin: 0 auto;
+    }
+
+    .showcase .container .hero-img{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .showcase .container .hero-img img{
+        width: 80%;
+        margin-left: 18%;
 }
