@@ -788,4 +788,19 @@ footer a{
     .showcase .container .hero-img img{
         width: 80%;
         margin-left: 18%;
+    }
+
+    .promo-design .container{
+        flex-direction: column;
+    }
+
+    .promo-design .container .purple-box ,
+    .white-box{
+        width: 100%;
+    }
+
+    .color-collection .container{
+        flex-direction: column;
+    }
+    
 }
